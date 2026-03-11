@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { router } from './router';
-import { Button, Panel } from 'primevue'
+import { Button, Divider, Message, Panel } from 'primevue'
 import './style.css'
 import 'primeicons/primeicons.css';
 import App from './App.vue'
@@ -20,5 +20,7 @@ createApp(App)
     }
 })
 .component('Button', Button)
+.component('Divider', Divider)
+.component('Message', Message)
 .component('Panel', Panel)
 .mount('#app')
