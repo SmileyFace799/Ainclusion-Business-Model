@@ -60,7 +60,29 @@ export const allContent = {
                 ]}
             ]}
         ]},
-        bodies: [{tag: "p", content: "Something about our key partners"}]
+        bodies: [
+            {tag: "Divider", content: "Academic aid"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Student volunteers"},
+                {tag: "p", content: "They contribute directly to key activities such as organizing seminars and workshops, running coffee stands, supporting outreach events, and helping create and publish website content. Student volunteers also embody AInclusion’s mission: they are both the target group and active co-creators of a responsible AI culture on campus, making the initiative more credible, relatable, and sustainable."},
+                {tag: "h2", content: "Universites (NTNU, External)"},
+                {tag: "p", content: "The partnership with NTNU is essential: it provides the venues and infrastructure needed to host the events and, by taking place on campus, the activities become easy to access and more visible to students. NTNU’s academic setting also adds credibility to AInclusion’s work and helps attract participants by signaling quality and relevance. Collaboration with external universities can extend AInclusion’s reach beyond one campus, enabling the model to scale through joint events, shared content, and partnerships with student communities in other locations."},
+                {tag: "h2", content: "Relevant organisations"},
+                {tag: "p", content: "Partner organizations such as NORA and Feministihuset help AInclusion connect AI ethics to broader societal conversations and reach communities beyond campus. These partners contribute networks, expertise, and event platforms that support AInclusion’s outreach through exhibitions and public events."}
+            ]},
+            {tag: "Divider", content: "Suppliers"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Edibles and refreshment"},
+                {tag: "p", content: "uppliers that provide food, coffee, and refreshments are practical partners that support participation and community building at events. Small details like accessible refreshments can improve attendance, create a welcoming atmosphere, and strengthen social engagement around seminars, workshops, and book clubs."}
+            ]},
+            {tag: "Divider", content: "Financial aid"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Donators"},
+                {tag: "p", content: "Donor support is directly linked to AInclusion’s ability to deliver consistent programming and keep activities accessible to students."},
+                {tag: "h2", content: "Institutional relations"},
+                {tag: "p", content: "Public institutions and grant providers are key partners for long-term sustainability and legitimacy. Their funding can cover larger operational needs such as event costs, outreach initiatives, and platform maintenance, especially when volunteer capacity is limited."}
+            ]},
+        ]
     },
     keyActivities: {
         title: "Key Activities",
@@ -104,9 +126,19 @@ export const allContent = {
                 {tag: "p", content: "Access to NTNU seminar and workshop spaces is an essential resource for AInclusion’s on-campus activities. These venues make it possible to run regular student-focused seminars, workshops, book events, and dialogue sessions in an accessible and familiar environment."}
             ]},
             {tag: "Divider", content: "Human"},
-            {tag: "h2", content: "Something 2"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Voluntary event organisers"},
+                {tag: "p", content: "Volunteer event organisers, primarily students, are essential to AInclusion’s ability to deliver activities with limited funding. They support the planning and execution of seminars, workshops, coffee stands, and outreach events by handling logistics, facilitation, promotion, and participant engagement."},
+                {tag: "h2", content: "Web development and content team"},
+                {tag: "p", content: "They build and maintain the digital platform where key materials are published, such as learning resources, author interviews, book excerpts, and event information. This team ensures that AInclusion’s knowledge-sharing is not limited to one-time events, but becomes reusable, accessible, and easy for students to engage with before and after seminars, strengthening continuity across the organization’s channels and activities."},
+                {tag: "h2", content: "Voluntary event organisers"},
+                {tag: "p", content: "The author outreach team enables AInclusion’s book club and learning-campaign model by building relationships with relevant authors and experts in AI ethics, fairness, and responsible AI. They identify suitable authors, secure collaboration agreements, coordinate permissions for excerpts, and arrange interviews, Q&As, talks, or webinars."},
+            ]},
             {tag: "Divider", content: "Digital"},
-            {tag: "h2", content: "Something 3"}
+            {tag: "div", content: [
+                {tag: "h2", content: "Robust content website"},
+                {tag: "p", content: "A robust content website functions as AInclusion’s main digital infrastructure and a key channel for student engagement. It acts as a hub for event promotion, learning resources, and community-driven content such as interviews, book-based discussion materials, and summaries of key ethical themes. The website supports low-threshold participation and helps AInclusion reach whomever may not attend every event. It also strengthens continuity in the business model by connecting seminars, book clubs, and outreach into one coherent, easy to use, visible platform."}
+            ]},
         ]
     },
     socialValueProposition: {
@@ -135,7 +167,14 @@ export const allContent = {
             {tag: "p", content: "Trust and mediation between different groups"},
             {tag: "p", content: "Relationship between members and providers"}
         ]},
-        bodies: [{tag: "p", content: "..."}]
+        bodies: [
+            {tag: "h2", content: "Co-Creation and peer collaboration"},
+            {tag: "p", content: "(Co-Creation and peer collaboration)"},
+            {tag: "h2", content: "Trust and mediation between different groups"},
+            {tag: "p", content: "(Trust and mediation between different groups)"},
+            {tag: "h2", content: "Relationship between members and providers"},
+            {tag: "p", content: "(Relationship between members and providers)"}
+        ]
     },
     channels: {
         title: "Channels",
@@ -158,7 +197,29 @@ export const allContent = {
                 {tag: "li", content: "Book clubs"}
             ]}
         ]},
-        bodies: [{tag: "p", content: "..."}]
+        bodies: [
+            {tag: "Divider", content: "Digital"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Social media"},
+                {tag: "p", content: "(Social media)"},
+                {tag: "h2", content: "Online resource library"},
+                {tag: "p", content: "(Online resource library)"}
+            ]},
+            {tag: "Divider", content: "Physical"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Feministhuset"},
+                {tag: "p", content: "(Feministhuset)"},
+                {tag: "h2", content: "Exhibitions and seminars"},
+                {tag: "p", content: "(Exhibitions and seminars)"}
+            ]},
+            {tag: "Divider", content: "Interactive"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Workshops"},
+                {tag: "p", content: "(Workshops)"},
+                {tag: "h2", content: "Book clubs"},
+                {tag: "p", content: "(Book clubs)"}
+            ]},
+        ]
     },
     stakeholders: {
         title: "Stakeholders",
@@ -194,7 +255,18 @@ export const allContent = {
                 ]}
             ]}
         ]},
-        bodies: [{tag: "p", content: "..."}]
+        bodies: [
+            {tag: "h2", content: "Active prosumers"},
+            {tag: "p", content: "(Active prosumers)"},
+            {tag: "h2", content: "General public (regular members)"},
+            {tag: "p", content: "(General public (regular members))"},
+            {tag: "h2", content: "Skilled professionals/mentors"},
+            {tag: "p", content: "(Skilled professionals/mentors)"},
+            {tag: "h2", content: "Creatives and artists"},
+            {tag: "p", content: "(Creatives and artists)"},
+            {tag: "h2", content: "Institutional stakeholders (?)"},
+            {tag: "p", content: "(Institutional stakeholders (?))"},
+        ]
     },
     costStructure: {
         title: "Cost Structure",
@@ -228,7 +300,26 @@ export const allContent = {
                 ]}
             ]}
         ]},
-        bodies: [{tag: "p", content: "..."}]
+        bodies: [
+            {tag: "Divider", content: "Fixed costs"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Outreach team"},
+                {tag: "p", content: "The outreach team represents a recurring cost linked to AInclusion’s visibility and partnerships beyond campus. This includes planning and coordination for exhibitions, collaborations with external organizations, and communication efforts that position AI ethics and responsible AI in broader social settings."},
+                {tag: "h2", content: "Coffee stands"},
+                {tag: "p", content: "Coffee and simple refreshments are recurring fixed costs because they are consistently used across seminars, workshops, and community events. Coffee stands are a stable, low-cost activity that supports community-building and student engagement. Costs may include basic equipment, supplies, small operational needs and coordination time."},
+                {tag: "h2", content: "Website management team"},
+                {tag: "p", content: "Maintaining the website creates ongoing costs related to hosting, updates, content publishing, and technical support. Since the website is a core channel and key resource, used for event promotion, learning materials, author interviews, and book-based content, this cost is essential for continuity and for ensuring the organization’s impact extends beyond one-time events."}
+            ]},
+            {tag: "Divider", content: "Variable costs"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Occasionally renting seminar rooms"},
+                {tag: "p", content: "While NTNU often provides space, AInclusion may sometimes need to rent additional rooms or external venues for larger events or collaborations outside campus. These costs fluctuate depending on the scale and frequency of activities and allow the organization to expand capacity when needed."},
+                {tag: "h2", content: "Travel and accomondation expenses"},
+                {tag: "p", content: "If AInclusion collaborates with student groups at other universities, authors or external experts, travel and accommodation costs may arise for organisers or invited participants for the events, workshops, or conferences. These expenses can include transportation and short-term accommodation when participants need to travel to attend in person."},
+                {tag: "h2", content: "Conferences expenses for edibles and refreshments"},
+                {tag: "p", content: "Larger events and conferences typically require additional spending on refreshments and practical logistics. These variable costs scale with participant numbers and event length, and they support participation, comfort, and a positive event experience—important for attracting students and maintaining engagement."}
+            ]},
+        ]
     },
     valueCapture: {
         title: "Value Capture",
@@ -250,6 +341,25 @@ export const allContent = {
                 ]}
             ]}
         ]},
-        bodies: [{tag: "p", content: "..."}]
+        bodies: [
+            {tag: "Divider", content: "Financial"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Public grants and institutional funding"},
+                {tag: "p", content: "(Public grants and institutional funding)"},
+                {tag: "h2", content: "Donations"},
+                {tag: "p", content: "(Donations)"},
+                {tag: "h2", content: "Crowdfunding"},
+                {tag: "p", content: "(Crowdfunding)"}
+            ]},
+            {tag: "Divider", content: "Non-financial"},
+            {tag: "div", content: [
+                {tag: "h2", content: "Portfolio building for students"},
+                {tag: "p", content: "(Portfolio building for students)"},
+                {tag: "h2", content: "Social recognition and reputation"},
+                {tag: "p", content: "(Social recognition and reputation)"},
+                {tag: "h2", content: "Membership sign-ups"},
+                {tag: "p", content: "(Membership sign-ups)"}
+            ]},
+        ]
     }
 } as {[key: string]: ContentType}
