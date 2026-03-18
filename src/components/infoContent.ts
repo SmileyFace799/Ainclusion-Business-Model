@@ -137,7 +137,7 @@ export const allContent = {
             {tag: "Divider", content: "Digital"},
             {tag: "div", content: [
                 {tag: "h2", content: "Robust content website"},
-                {tag: "p", content: "A robust content website functions as AInclusion’s main digital infrastructure and a key channel for student engagement. It acts as a hub for event promotion, learning resources, and community-driven content such as interviews, book-based discussion materials, and summaries of key ethical themes. The website supports low-threshold participation and helps AInclusion reach whomever may not attend every event. It also strengthens continuity in the business model by connecting seminars, book clubs, and outreach into one coherent, easy to use, visible platform."}
+                {tag: "p", content: "A robust content website functions as AInclusion’s main digital infrastructure and a key channel for student engagement. It acts as a hub for event promotion, learning resources, and community-driven content such as interviews, book-based discussion materials, and summaries of key ethical themes. The website supports low-threshold participation and helps AInclusion reach whomever may not attend every event. It also strengthens continuity in the growth model by connecting seminars, book clubs, and outreach into one coherent, easy to use, visible platform."}
             ]},
         ]
     },

@@ -2,7 +2,7 @@
 	<img src="../assets/ainclusion.webp" style="max-width: 50vw;">
 	<div style="display: flex; align-items: flex-end; margin: 0 1em;">
 		<Message variant="outlined" style="outline-color: blue; color: blue; cursor: default;">Operations ></Message>
-		<h1 style="flex-grow: 1;">Business model</h1>
+		<h1 style="flex-grow: 1;">Growth model</h1>
 		<Message variant="outlined" style="outline-color: red; color: red; cursor: default;">< Engagement</Message>
 	</div>
 	<div class="grid">
