@@ -200,10 +200,8 @@ export const allContent = {
         bodies: [
             {tag: "Divider", content: "Digital"},
             {tag: "div", content: [
-                {tag: "h2", content: "Social media"},
-                {tag: "p", content: "(Social media)"},
-                {tag: "h2", content: "Online resource library"},
-                {tag: "p", content: "(Online resource library)"}
+                {tag: "p", content: "The official website will serve as the main hub for updates, resources, and membership registration. Social media platforms such as LinkedIn, along with email communication, help reach and coordinate a broader international network. This could be expanded to use more social media platforms such as Facebook and Instagram."},
+                {tag: "p", content: "Co-design workshops and project platforms to allow members to collaborate on open-source tools and learning resources through a commons-based peer production model."}
             ]},
             {tag: "Divider", content: "Physical"},
             {tag: "div", content: [
@@ -231,12 +229,12 @@ export const allContent = {
                 ]},
                 {tag: "br"},
                 {tag: "li", content: [
-                    {tag: "span", content: "General public (regular members)"},
+                    {tag: "span", content: "General public"},
                     {tag: "ul", content: [{tag: "li", content: "Seek practical tools"}]}
                 ]},
                 {tag: "br"},
                 {tag: "li", content: [
-                    {tag: "span", content: "Skilled professionals/mentors"},
+                    {tag: "span", content: "Skilled professionals and mentors"},
                     {tag: "ul", content: [{tag: "li", content: "Contribute with expertise"}]}
                 ]},
                 {tag: "br"},
@@ -246,7 +244,7 @@ export const allContent = {
                 ]},
                 {tag: "br"},
                 {tag: "li", content: [
-                    {tag: "span", content: "Institutional stakeholders (?)"},
+                    {tag: "span", content: "Institutional stakeholders"},
                     {tag: "ul", content: [
                         {tag: "li", content: "Partner organizations (Feministhuset)"},
                         {tag: "li", content: "Donors"},
@@ -256,16 +254,19 @@ export const allContent = {
             ]}
         ]},
         bodies: [
+            {tag: "p", content: "We define the stakeholders and \"customer\" segments by their role in the value network. Since AINCLUSION is an NGO, the two groups will function as both beneficiaries and prosumers. The beneficiaries are the ones who receive value, and the prosumers are the ones who are contributing to the organisation's activities and value. We divide the stakeholders into five specific subgroups; Active prosumers, the general public, skilled professionals and mentors, interdisciplinary creatives and artists, and institutional stakeholders and partners."},
             {tag: "h2", content: "Active prosumers"},
-            {tag: "p", content: "(Active prosumers)"},
-            {tag: "h2", content: "General public (regular members)"},
-            {tag: "p", content: "(General public (regular members))"},
-            {tag: "h2", content: "Skilled professionals/mentors"},
-            {tag: "p", content: "(Skilled professionals/mentors)"},
-            {tag: "h2", content: "Creatives and artists"},
-            {tag: "p", content: "(Creatives and artists)"},
-            {tag: "h2", content: "Institutional stakeholders (?)"},
-            {tag: "p", content: "(Institutional stakeholders (?))"},
+            {tag: "p", content: "This is a key segment for the growth of AINCLUSION. The students are able to actively contribute to projects such as co-designing AI learning tools, seminars and communication. The students will in this way gain hands-on experience, build professional portfolios, and also receive recognition through their collaborative work."},
+            {tag: "h2", content: "The general public"},
+            {tag: "p", content: "The general public here refers to the less skilled beneficiaries. These are individuals with limited AI knowledge who participate in accessible workshops and other learning resources. They likely seek practical tools to help improve everyday life and work without requiring advanced technical skills and knowledge. The general public is a beneficiary."},
+            {tag: "h2", content: "Skilled professionals and mentors"},
+            {tag: "p", content: "These are AI experts and experienced professionals who acts as mentors, tutors and collaborators. They contribute with their expertise whilst benefiting from the networking possibilities and participation in interdisciplinary projects. The skilled professionals are prosumers."},
+            {tag: "h2", content: "Interdisciplinary creatives and artists"},
+            {tag: "p", content: "This refers to people interested in the intersection of AI, creativity and inclusion. They collaborate on creative AI projects and exhibitions without needing deep technical expertise, and are therefore prosumers."},
+            {tag: "h2", content: "Institutional stakeholders and partners"},
+            {tag: "p", content: "These are the organisations and supporters that sustain the initiative. This includes partners organisations such as Feministhuset, possible donors and benefactors, and public institutions interested in ethical and human-centered AI."},
+            {tag: "h2", content: "Value network"},
+            {tag: "p", content: "The can all be put together in a value network. Here, the professionals and mentors provide expertise to students who help develop and co-create tools. This way, the general public benefits from accessible AI learning. The creatives are able to expand their interdisciplinary projects and reach a new audience. Lastly, the donors and partners help support the infrastructure and funding. This results in a multi-sided platform, where different groups collaborate to produce and distribute knowledge about ethical, responsible, and inclusive AI."}
         ]
     },
     costStructure: {
