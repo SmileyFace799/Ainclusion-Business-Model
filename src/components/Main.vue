@@ -1,9 +1,9 @@
 <template>
 	<img src="../assets/ainclusion.webp" style="max-width: 50vw;">
 	<div style="display: flex; align-items: flex-end; margin: 0 1em;">
-		<Message variant="outlined" style="outline-color: blue; color: blue; cursor: default;">Operations ></Message>
+		<Message variant="outlined" style="outline-color: blue; color: blue; cursor: default;">Operations<span style="font-size: 1.4em;" class="material-icons">arrow_forward</span></Message>
 		<h1 style="flex-grow: 1;">Growth Model</h1>
-		<Message variant="outlined" style="outline-color: red; color: red; cursor: default;">< Engagement</Message>
+		<Message variant="outlined" style="outline-color: red; color: red; cursor: default;"><span style="font-size: 1.4em;" class="material-icons">arrow_back</span>Engagement</Message>
 	</div>
 	<div class="grid">
 		<Panel v-for="data, slug in elementStyles"
@@ -130,6 +130,12 @@ export default defineComponent({
 
 .v-enter-from, .v-leave-to {
 	opacity: 0;
+}
+
+:global(.p-message-text) {
+	align-items: flex-end;
+	display: flex;
+	gap: 0.2em;
 }
 
 </style>

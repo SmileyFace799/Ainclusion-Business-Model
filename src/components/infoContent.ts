@@ -163,17 +163,18 @@ export const allContent = {
 	relations: {
 		title: "Relations",
 		shortBody: {tag: "span", content: [
-			{tag: "p", content: "Co-Creation and peer collaboration"},
-			{tag: "p", content: "Trust and mediation between different groups"},
-			{tag: "p", content: "Relationship between members and providers"}
+			{tag: "p", content: "Co-creation and peer collaboration"},
+			{tag: "p", content: "Trust and mediation"},
+			{tag: "p", content: "Member-provider relationship"}
 		]},
 		bodies: [
-			{tag: "h2", content: "Co-Creation and peer collaboration"},
-			{tag: "p", content: "(Co-Creation and peer collaboration)"},
-			{tag: "h2", content: "Trust and mediation between different groups"},
-			{tag: "p", content: "(Trust and mediation between different groups)"},
-			{tag: "h2", content: "Relationship between members and providers"},
-			{tag: "p", content: "(Relationship between members and providers)"}
+			{tag: "p", content: "AINCLUSION builds its relationships around active participation, trust, and community engagement, rather than traditional buyer–seller dynamics. Members both contribute to and benefit from the organization."},
+			{tag: "h2", content: "Co-creation and peer collaboration"},
+			{tag: "p", content: "Members actively contribute to value creation through workshops, projects, and development of shared resources (e.g., AI learning tools). This follows a commons-based peer production model, where members gain recognition, experience, and a sense of purpose rather than financial rewards."},
+			{tag: "h2", content: "Trust and mediation"},
+			{tag: "p", content: "AINCLUSION acts as a bridge between diverse groups, including students, professionals, and underrepresented communities.It provides safe and inclusive spaces for dialogue, collaboration, and ethical reflection on AI."},
+			{tag: "h2", content: "Member-provider relationship"},
+			{tag: "p", content: "In AINCLUSION, the distinction between members and providers is fluid. Members initially engage by accessing learning opportunities and community activities, while more experienced or active participants contribute by leading workshops, mentoring, or co-developing resources. The organization encourages this progression from participation to contribution, fostering a collaborative, peer-driven environment. Relationships with external stakeholders (e.g., partners and donors) are based on trust, shared goals, and transparency."}
 		]
 	},
 	channels: {
@@ -191,10 +192,10 @@ export const allContent = {
 				{tag: "li", content: "Exhibitions and seminars"}
 			]},
 			{tag: "br"},
-			{tag: "span", content: "Interactive:"},
+			{tag: "span", content: "Events:"},
 			{tag: "ul", content: [
-				{tag: "li", content: "Workshops"},
-				{tag: "li", content: "Book clubs"}
+				{tag: "li", content: "Event-based channels"}
+				{tag: "li", content: "Collaborative development channels"},
 			]}
 		]},
 		bodies: [
@@ -205,17 +206,15 @@ export const allContent = {
 			]},
 			{tag: "Divider", content: "Physical"},
 			{tag: "div", content: [
-				{tag: "h2", content: "Feministhuset"},
-				{tag: "p", content: "(Feministhuset)"},
-				{tag: "h2", content: "Exhibitions and seminars"},
-				{tag: "p", content: "(Exhibitions and seminars)"}
+				{tag: "h2", content: "Collaboration spaces"},
+				{tag: "p", content: "Locations like Feministhuset in Trondheim are used for workshops, co-design sessions, and meetings. Exhibition spaces are also used to showcase interdisciplinary projects combining AI and creativity"},
 			]},
-			{tag: "Divider", content: "Interactive"},
+			{tag: "Divider", content: "Events"},
 			{tag: "div", content: [
-				{tag: "h2", content: "Workshops"},
-				{tag: "p", content: "(Workshops)"},
-				{tag: "h2", content: "Book clubs"},
-				{tag: "p", content: "(Book clubs)"}
+				{tag: "h2", content: "Event-based channels"},
+				{tag: "p", content: "Activities such as virtual meetings, book clubs, workshops, and courses connect different groups and facilitate knowledge sharing and interdisciplinary experience."},
+				{tag: "h2", content: "Collaborative development channels"},
+				{tag: "p", content: "Co-design workshops and project platforms to allow members to collaborate on open-source tools and learning resources through a commons-based peer production model."}
 			]},
 		]
 	},
@@ -351,9 +350,9 @@ export const allContent = {
 			{tag: "Divider", content: "Non-financial"},
 			{tag: "div", content: [
 				{tag: "h2", content: "Portfolio building for students"},
-				{tag: "p", content: "(Portfolio building for students)"},
+				{tag: "p", content: "For students, a way of receiving value is to participate in projects. This lets the students build professional portfolios that they can use when applying for jobs, giving them an edge in the job market. They might also gain real-life experience in new technologies and areas of interest."},
 				{tag: "h2", content: "Membership sign-ups"},
-				{tag: "p", content: "(Membership sign-ups)"}
+				{tag: "p", content: "For the organisation itself, a way of capturing value and measuring how its doing, noting how the membership sign-ups change. This is also the overarching goal of the whole growth model, increasing the number of members. This will be a great way to see how well AINCLUSION is doing."}
 			]},
 		]
 	}
