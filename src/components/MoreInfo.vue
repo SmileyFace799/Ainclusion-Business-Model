@@ -19,7 +19,7 @@
 <script lang="ts">
 
 import ContentComponent from './ContentComponent.vue';
-import { defineComponent, type PropType } from 'vue';
+import { defineComponent } from 'vue';
 import { allContent, defaultContent, type ContentType } from './infoContent';
 import { allStyles, defaultStyle, type StyleType } from './infoStyle';
 
