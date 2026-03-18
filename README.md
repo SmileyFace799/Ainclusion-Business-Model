@@ -1,7 +1,7 @@
 # What is this?
-This is a growth model specifically made for [AINCLUSION](https://ainclusion.com). Last time this README was updated, this website was (and hopefully still is) hosted on https://ainclusion.smiley-face.no. 
+This is a growth model specifically made for [AINCLUSION](https://ainclusion.com). Last time this README was updated, this website was (and hopefully still is) hosted on https://ainclusion.smiley-face.no.
 
-# How to run?
+# Want to run this website locally?
 ## Installing prerequesites
 ### `npm` (version 20+), using `nvm`:
 1. Download & install `nvm`
