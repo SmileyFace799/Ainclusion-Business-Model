@@ -73,7 +73,7 @@ export const allContent = {
             {tag: "Divider", content: "Suppliers"},
             {tag: "div", content: [
                 {tag: "h2", content: "Edibles and refreshment"},
-                {tag: "p", content: "uppliers that provide food, coffee, and refreshments are practical partners that support participation and community building at events. Small details like accessible refreshments can improve attendance, create a welcoming atmosphere, and strengthen social engagement around seminars, workshops, and book clubs."}
+                {tag: "p", content: "Suppliers that provide food, coffee, and refreshments are practical partners that support participation and community building at events. Small details like accessible refreshments can improve attendance, create a welcoming atmosphere, and strengthen social engagement around seminars, workshops, and book clubs."}
             ]},
             {tag: "Divider", content: "Financial aid"},
             {tag: "div", content: [
