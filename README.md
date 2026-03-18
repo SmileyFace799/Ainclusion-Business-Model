@@ -1,5 +1,28 @@
-# Vue 3 + TypeScript + Vite
+# What is this?
+This is a growth model specifically made for [AINCLUSION](https://ainclusion.com). Last time this README was updated, this website was (and hopefully still is) hosted on https://ainclusion.smiley-face.no. 
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# How to run?
+## Installing prerequesites
+### `npm` (version 20+), using `nvm`:
+1. Download & install `nvm`
+    - Linux: https://github.com/nvm-sh/nvm
+    - Windows: https://github.com/coreybutler/nvm-windows/releases/latest
+2. Once installed, open a new terminal / command prompt
+3. Type `nvm install 20`
+4. Type `nvm use 20`
+5. Done, you have npm installed. If you ran into any errors, you're on your own, research it & solve it yourself
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Running the local web server
+1. Clone this repository
+    - With git: Open terminal -> `git clone https://github.com/SmileyFace799/ainclusion-business-model`
+    - Manually:
+        1. Click the big green "code"-button, then "Download zip"
+        2. Extract the folder somewhere
+2. Open a terminal / command prompt inside the cloned/extracted folder
+    - Linux: You should know how to do this
+    - Windows 10: Navigate inside the folder -> type "cmd" in file explorer's address bar
+    - Windows 11: Nagivate inside the folder -> right click the empty background -> Open in command prompt (or something similar)
+3. Type `npm install`
+    - If this gives an error, something is wrong with the project's dependency tree, and that's my fault. If this happens, create a GitHub issue with this problem
+4. Type `npm run dev`
+5. Done, web server is not running. You can view the website by navigating to http://localhost:5173 in your browser
