@@ -25,4 +25,4 @@ This is a growth model specifically made for [AINCLUSION](https://ainclusion.com
 3. Type `npm install`
     - If this gives an error, something is wrong with the project's dependency tree, and that's my fault. If this happens, create a GitHub issue with this problem
 4. Type `npm run dev`
-5. Done, web server is not running. You can view the website by navigating to http://localhost:5173 in your browser
+5. Done, web server is now running. You can view the website by navigating to http://localhost:5173 in your browser
