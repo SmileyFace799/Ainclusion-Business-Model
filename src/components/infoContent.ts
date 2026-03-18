@@ -194,7 +194,7 @@ export const allContent = {
 			{tag: "br"},
 			{tag: "span", content: "Events:"},
 			{tag: "ul", content: [
-				{tag: "li", content: "Event-based channels"}
+				{tag: "li", content: "Event-based channels"},
 				{tag: "li", content: "Collaborative development channels"},
 			]}
 		]},
