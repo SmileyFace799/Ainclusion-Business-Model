@@ -18,6 +18,10 @@ export const allStyles = {
         color: "blue",
         css: {gridRow: '2', gridColumn: '3 / 5'}
     },
+    costStructure: {
+        color: "blue",
+        css: {gridRow: '3', gridColumn: '1 / 6'}
+    },
     socialValueProposition: {
         color: "bluered",
         css: {gridRow: '1 / 3', gridColumn: '5 / 7'}
@@ -33,10 +37,6 @@ export const allStyles = {
     stakeholders: {
         color: "red",
         css: {gridRow: '1 / 3', gridColumn: '9 / 11'}
-    },
-    costStructure: {
-        color: "blue",
-        css: {gridRow: '3', gridColumn: '1 / 6'}
     },
     valueCapture: {
         color: "red",

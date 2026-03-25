@@ -158,4 +158,17 @@ export default defineComponent({
 	gap: 0.2em;
 }
 
+@media screen and (max-width: 960px) {
+  .grid {
+	display: flex;
+	flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .box {
+	padding: 1em 0;
+  }
+}
+
 </style>
