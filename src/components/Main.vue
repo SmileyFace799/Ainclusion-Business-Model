@@ -1,9 +1,19 @@
 <template>
 	<img src="../assets/ainclusion.webp" style="max-width: 50vw;">
 	<div style="display: flex; align-items: flex-end; margin: 0 1em;">
-		<Message variant="outlined" style="outline-color: blue; color: blue; cursor: default;">Operations<span style="font-size: 1.4em;" class="material-icons">arrow_forward</span></Message>
+		<Panel variant="outlined" style="border-color: blue; color: blue; cursor: default; " :pt="messageStyle">
+			<div style="display: flex; align-items: center;">
+				Operations
+				<span style="font-size: 1.4em;" class="material-icons">arrow_forward</span>
+			</div>
+		</Panel>
 		<h1 style="flex-grow: 1;">Growth Model</h1>
-		<Message variant="outlined" style="outline-color: red; color: red; cursor: default;"><span style="font-size: 1.4em;" class="material-icons">arrow_back</span>Engagement</Message>
+		<Panel variant="outlined" style="border-color: red; color: red; cursor: default;" :pt="messageStyle">
+			<div style="display: flex; align-items: center;">
+				<span style="font-size: 1.4em;" class="material-icons">arrow_back</span>
+				Engagement
+			</div>
+		</Panel>
 	</div>
 	<div class="grid">
 		<Panel v-for="data, slug in elementStyles"
@@ -35,6 +45,7 @@ export default defineComponent({
 	data() {
 		return {
 			count: 0,
+			messageStyle: {header: {style: {display: 'none'}}, content: {style: {padding: '0.5em'}}},
 			headerStyle: {header: {style: {fontSize: '1.5em'}}},
 			elementStyles: allStyles,
 			allContent: allContent,
