@@ -22,6 +22,7 @@
 </template>
 
 <script lang="ts">
+import Cookies from 'js-cookie';
 import { defineComponent } from 'vue';
 import { useAnimationsStore } from './pinia/animationsStore';
 import { useThemeStore } from './pinia/themeStore';
@@ -39,16 +40,16 @@ export default defineComponent({
 		animationsStore: () => useAnimationsStore()
 	},
 	methods: {
-		updateDarkTracking(): void {
-			this.themeStore.setTheme(document.documentElement.classList.contains(this.darkClass));
+		updateDarkTracking(setCookie: boolean = true): void {
+			this.themeStore.setTheme(document.documentElement.classList.contains(this.darkClass), setCookie);
 		},
-		setTheme(dark: boolean): void {
+		setTheme(dark: boolean, setCookie: boolean = true): void {
 			if (dark && !this.themeStore.darkTheme) {
 				document.documentElement.classList.add(this.darkClass);
 			} else if (!dark && this.themeStore.darkTheme) {
 				document.documentElement.classList.remove(this.darkClass);
 			}
-			this.updateDarkTracking();
+			this.updateDarkTracking(setCookie);
 		},
 		toggleTheme(): void {
 			this.setTheme(!this.themeStore.darkTheme);
@@ -58,8 +59,17 @@ export default defineComponent({
 		}
 	},
 	mounted() {
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			this.setTheme(true);
+		const darkCookie = Cookies.get('darkTheme')
+		if (darkCookie !== undefined) {
+			if (darkCookie === "true") {
+				this.setTheme(true, false)
+			}
+		} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			this.setTheme(true, false);
+		}
+
+		if (Cookies.get("animations") === "false") {
+			this.animationsStore.setAnimations(false, false);
 		}
 	}
 });
