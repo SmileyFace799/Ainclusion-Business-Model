@@ -1,5 +1,5 @@
 <template>
-	<img src="../assets/ainclusion.webp" style="max-width: 50vw;">
+	<img src="/ainclusion.webp" style="max-width: 50vw;">
 	<div style="display: flex; align-items: flex-end; margin: 0 1em;">
 		<Panel variant="outlined" style="border-color: blue; color: blue; cursor: default; " :pt="messageStyle">
 			<div style="display: flex; align-items: center;">
