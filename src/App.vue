@@ -12,7 +12,7 @@
 			</div>
 			<div class="menu-entry">
 				<span>Animations</span>
-				<ToggleSwitch :model-value="animationsStore.animations" @update:model-value="animationsStore.setAnimations" />
+				<ToggleSwitch :model-value="animationsStore.animations" @update:model-value="animationsStore.toggleAnimations" />
 			</div>
 		</div>
 	</Popover>

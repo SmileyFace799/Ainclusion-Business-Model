@@ -11,7 +11,7 @@
 		</div>
 		<Panel :class="style.color" style="text-align: start;" :pt="{header: {style: 'font-size: 3em;'}}" :header="content.title"><ContentComponent :bodies="content.bodies"></ContentComponent></Panel>
 	</div>
-	<Transition>
+	<Transition v-if="animationsStore.animations">
 		<div class="fade-overlay" v-if="showOverlay"></div>
 	</Transition>
 </template>
@@ -22,6 +22,7 @@ import ContentComponent from './ContentComponent.vue';
 import { defineComponent } from 'vue';
 import { allContent, defaultContent, type ContentType } from './infoContent';
 import { allStyles, defaultStyle, type StyleType } from './infoStyle';
+import { useAnimationsStore } from '../pinia/animationsStore';
 
 export default defineComponent({
 	name: "MoreInfo",
@@ -45,12 +46,18 @@ export default defineComponent({
 		},
 		style(): StyleType {
 			return allStyles[this.slug] ?? defaultStyle;
-		}
+		},
+		animationsStore: () => useAnimationsStore()
 	},
 	methods: {
 		navigateBack() {
 			this.showOverlay = true;
-			setTimeout(() => this.$router.push("/"), 200);
+			const route = () => this.$router.push("/");
+			if (this.animationsStore.animations) {
+				setTimeout(() => route(), 200);
+			} else {
+				route()
+			}
 		}
 	},
 	mounted() {

@@ -15,7 +15,7 @@
 			<ContentComponent :bodies="[allContent[slug]?.shortBody ?? defaultContent.shortBody]"></ContentComponent>
 		</Panel>
 	</div>
-	<Transition>
+	<Transition v-if="animationsStore.animations">
 		<div class="fade-overlay" v-if="showOverlay"></div>
 	</Transition>
 </template>
@@ -25,6 +25,7 @@ import { defineComponent } from 'vue';
 import { allContent, defaultContent } from './infoContent';
 import ContentComponent from './ContentComponent.vue';
 import { allStyles } from './infoStyle';
+import { useAnimationsStore } from '../pinia/animationsStore';
 
 export default defineComponent({
 	name: "Main",
@@ -41,10 +42,18 @@ export default defineComponent({
 			showOverlay: true
 		}
 	},
+	computed: {
+		animationsStore: () => useAnimationsStore()
+	},
 	methods: {
 		redirect(destination: string) {
 			this.showOverlay = true;
-			setTimeout(() => this.$router.push("/" + destination), 200);
+			const route = () => this.$router.push("/" + destination);
+			if (this.animationsStore.animations) {
+				setTimeout(() => route(), 200);
+			} else {
+				route()
+			}
 		}
 	},
 	mounted() {
