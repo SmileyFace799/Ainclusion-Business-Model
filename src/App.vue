@@ -8,11 +8,11 @@
 		<div style="display: flex; flex-direction: column; gap: 0.5em;">
 			<div class="menu-entry">
 				Dark theme
-				<ToggleSwitch :model-value="store.darkTheme" @update:model-value="toggleTheme"/>
+				<ToggleSwitch :model-value="themeStore.darkTheme" @update:model-value="toggleTheme"/>
 			</div>
 			<div class="menu-entry">
 				<span>Animations</span>
-				<ToggleSwitch :model-value="store.animations" @update:model-value="store.setAnimations" />
+				<ToggleSwitch :model-value="animationsStore.animations" @update:model-value="animationsStore.setAnimations" />
 			</div>
 		</div>
 	</Popover>
@@ -23,7 +23,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { useMainStore } from './pinia/mainStore';
+import { useAnimationsStore } from './pinia/animationsStore';
+import { useThemeStore } from './pinia/themeStore';
 import type { Popover } from 'primevue';
 
 export default defineComponent({
@@ -34,22 +35,23 @@ export default defineComponent({
 		}
 	},
 	computed: {
-		store: () => useMainStore()
+		themeStore: () => useThemeStore(),
+		animationsStore: () => useAnimationsStore()
 	},
 	methods: {
 		updateDarkTracking(): void {
-			this.store.setTheme(document.documentElement.classList.contains(this.darkClass));
+			this.themeStore.setTheme(document.documentElement.classList.contains(this.darkClass));
 		},
 		setTheme(dark: boolean): void {
-			if (dark && !this.store.darkTheme) {
+			if (dark && !this.themeStore.darkTheme) {
 				document.documentElement.classList.add(this.darkClass);
-			} else if (!dark && this.store.darkTheme) {
+			} else if (!dark && this.themeStore.darkTheme) {
 				document.documentElement.classList.remove(this.darkClass);
 			}
 			this.updateDarkTracking();
 		},
 		toggleTheme(): void {
-			this.setTheme(!this.store.darkTheme);
+			this.setTheme(!this.themeStore.darkTheme);
 		},
 		showMenu(event: MouseEvent): void {
 			(this.$refs.menu as InstanceType<typeof Popover>).toggle(event)
