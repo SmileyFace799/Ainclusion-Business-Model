@@ -1,6 +1,6 @@
 <template>
     <template v-for="body, i in bodies">
-        <img v-if="'path' in body" :src="'/' + body.path" :alt="body.alt" :style="{maxWidth: '100%', maxHeight: '100%', ...body.style}"></img>
+        <img v-if="'path' in body" :src="'/' + body.path" :alt="body.alt" fetchpriority="high" loading="eager" :style="{maxWidth: '100%', maxHeight: '100%', ...body.style}"></img>
         <component v-else :is="body.tag" :style="{marginTop: i === 0 ? 0 : undefined, marginBottom: i === bodies.length - 1 ? 0 : undefined, ...body.style}">
             <template v-if="typeof body.content === 'string'">
                 {{ body.content }}

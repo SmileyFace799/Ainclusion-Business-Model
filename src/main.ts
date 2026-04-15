@@ -6,7 +6,13 @@ import PrimeVue from "primevue/config"
 import { createApp } from 'vue'
 import { createPinia } from 'pinia';
 import { router } from './router';
-import { Button, Divider, Panel, Popover, ToggleSwitch } from 'primevue'
+
+// Component imports
+import Button from 'primevue/button';
+import Divider from 'primevue/divider';
+import Panel from 'primevue/panel';
+import Popover from 'primevue/popover';
+import ToggleSwitch from 'primevue/toggleswitch';
 
 createApp(App)
 .use(router)

@@ -26,7 +26,7 @@ import Cookies from 'js-cookie';
 import { defineComponent } from 'vue';
 import { useAnimationsStore } from './pinia/animationsStore';
 import { useThemeStore } from './pinia/themeStore';
-import type { Popover } from 'primevue';
+import type Popover from 'primevue/popover';
 
 export default defineComponent({
 	name: "App",
