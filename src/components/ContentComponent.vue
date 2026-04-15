@@ -1,8 +1,6 @@
 <template>
     <template v-for="body, i in bodies">
-        <img v-if="body.tag === 'img'" :src="'/' + body.content" :style="{maxWidth: '100%', maxHeight: '100%', ...body.style}">
-
-    </img>
+        <img v-if="'path' in body" :src="'/' + body.path" :alt="body.alt" :style="{maxWidth: '100%', maxHeight: '100%', ...body.style}"></img>
         <component v-else :is="body.tag" :style="{marginTop: i === 0 ? 0 : undefined, marginBottom: i === bodies.length - 1 ? 0 : undefined, ...body.style}">
             <template v-if="typeof body.content === 'string'">
                 {{ body.content }}
@@ -14,13 +12,13 @@
 
 <script lang="ts">
 import { defineComponent, type PropType } from 'vue';
-import type { BodyType } from './infoContent';
+import type { BodyType, ImageType } from './infoContent';
 
 export default defineComponent({
     name: "ContentComponent",
     props: {
         bodies: {
-            type: Array as PropType<BodyType[]>,
+            type: Array as PropType<(BodyType | ImageType)[]>,
             required: true
         }
     }

@@ -1,4 +1,6 @@
-export type BodyType = {tag: string, style?: {[key: string]: any}, content?: string | BodyType[]}
+type StyleType = {[key: string]: any};
+export type ImageType = {path: string, alt: string, style?: StyleType};
+export type BodyType = {tag: string, style?: StyleType, content?: string | (BodyType | ImageType)[]}
 
 export type ContentType = {
 	title: string,

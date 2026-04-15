@@ -1,14 +1,14 @@
 <template>
 	<img src="/ainclusion.webp" style="max-width: 50vw;">
 	<div style="display: flex; align-items: flex-end; margin: 0 1em;">
-		<Panel variant="outlined" style="border-color: blue; color: blue; cursor: default; " :pt="messageStyle">
+		<Panel variant="outlined" style="border-color: blue; cursor: default; " :pt="messageStyle">
 			<div style="display: flex; align-items: center;">
 				Operations
 				<span style="font-size: 1.4em;" class="material-icons">arrow_forward</span>
 			</div>
 		</Panel>
 		<h1 style="flex-grow: 1;">Growth Model</h1>
-		<Panel variant="outlined" style="border-color: red; color: red; cursor: default;" :pt="messageStyle">
+		<Panel variant="outlined" style="border-color: red; cursor: default;" :pt="messageStyle">
 			<div style="display: flex; align-items: center;">
 				<span style="font-size: 1.4em;" class="material-icons">arrow_back</span>
 				Engagement
