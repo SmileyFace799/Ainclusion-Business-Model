@@ -6,7 +6,7 @@
 					<span class="material-icons">arrow_back</span>
 				</template>
 			</Button>
-			<img id="logo" src="/ainclusion.webp" @click="navigateBack">
+			<img id="logo" src="/ainclusion.webp" alt="AINCLUSION logo" @click="navigateBack">
 			<span style="margin: 0 0 5px 0; font-size: 1.8em; font-weight: 400;">Growth Model</span>
 		</div>
 		<Panel :class="style.color" style="text-align: start;" :pt="{header: {style: 'font-size: 3em;'}}" :header="content.title"><ContentComponent :bodies="content.bodies"></ContentComponent></Panel>

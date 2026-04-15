@@ -18,12 +18,11 @@ export const allContent = {
 		title: "Key Partners",
 		shortBody: {tag: "span", content: [
 			{tag: "span", content: "Academic aid:"},
-			{tag: "ol", content: [
+			{tag: "ol", style: {display: "flex", flexDirection: "column", gap: "1em"}, content: [
 				{tag: "li", content: [
 					{tag: "span", content: "Student volunteers"},
 					{tag: "ul", content: [{tag: "li", content: "Provides essential labour"}]}
 				]},
-				{tag: "br"},
 				{tag: "li", content: [
 					{tag: "span", content: "Universities (NTNU, external)"},
 					{tag: "ul", content: [
@@ -31,7 +30,6 @@ export const allContent = {
 						{tag: "li", content: "Expertise"}
 					]}
 				]},
-				{tag: "br"},
 				{tag: "li", content: [
 					{tag: "span", content: "Relevant organizations"},
 					{tag: "ul", content: [
@@ -45,7 +43,7 @@ export const allContent = {
 			{tag: "ol", content: [{tag: "li", content: "Edibles and refreshment"}]},
 			{tag: "br"},
 			{tag: "span", content: "Financial aid:"},
-			{tag: "ol", content: [
+			{tag: "ol", style: {display: "flex", flexDirection: "column", gap: "1em"}, content: [
 				{tag: "li", content: [
 					{tag: "span", content: "Donators"},
 					{tag: "ul", content: [
@@ -223,27 +221,23 @@ export const allContent = {
 	stakeholders: {
 		title: "Stakeholders",
 		shortBody: {tag: "span", content: [
-			{tag: "ol", content: [
+			{tag: "ol", style: {display: "flex", flexDirection: "column", gap: "1em"}, content: [
 				{tag: "li", content: [
 					{tag: "span", content: "Active prosumers"},
 					{tag: "ul", content: [{tag: "li", content: "Collaborative work"}]}
 				]},
-				{tag: "br"},
 				{tag: "li", content: [
 					{tag: "span", content: "General public"},
 					{tag: "ul", content: [{tag: "li", content: "Seek practical tools"}]}
 				]},
-				{tag: "br"},
 				{tag: "li", content: [
 					{tag: "span", content: "Skilled professionals and mentors"},
 					{tag: "ul", content: [{tag: "li", content: "Contribute with expertise"}]}
 				]},
-				{tag: "br"},
 				{tag: "li", content: [
 					{tag: "span", content: "Creatives and artists"},
 					{tag: "ul", content: [{tag: "li", content: "Collaborate on creative AI-projects"}]}
 				]},
-				{tag: "br"},
 				{tag: "li", content: [
 					{tag: "span", content: "Institutional stakeholders"},
 					{tag: "ul", content: [
