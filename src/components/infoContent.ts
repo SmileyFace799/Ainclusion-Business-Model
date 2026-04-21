@@ -4,6 +4,7 @@ export type BodyType = {tag: string, style?: StyleType, content?: string | (Body
 
 export type ContentType = {
 	title: string,
+	icon?: ImageType,
 	shortBody: BodyType,
 	bodies: BodyType[]
 }
@@ -143,6 +144,7 @@ export const allContent = {
 	},
 	socialValueProposition: {
 		title: "Social Value Proposition",
+		icon: {path: "public/heart-light.svg", alt: "Heart icon"},
 		shortBody: {tag: "span", content: [
 			{tag: "p", content: "Making sure AI enhances, not replaces, human work"},
 			{tag: "p", content: "Making sure AI does not empower already existing barriers in society, and in the long run to combat them"},

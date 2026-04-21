@@ -20,8 +20,12 @@
 			:class="['box', data.color]"
 			:pt="headerStyle"
 			@click="() => redirect(slug)" :style="data.css"
-			:header="allContent[slug]?.title ?? defaultContent.title"
 		>
+			<template #header>
+				<div style="display: flex;"></div>
+				<span style="justify-self: flex-start;">{{ allContent[slug]?.title ?? defaultContent.title }}</span>
+				<img v-if="allContent[slug]?.icon !== undefined" style="justify-self: flex-end; color: white;" :src="allContent[slug].icon.path" :alt="allContent[slug].icon.alt">
+			</template>
 			<ContentComponent :bodies="[allContent[slug]?.shortBody ?? defaultContent.shortBody]"></ContentComponent>
 		</Panel>
 	</div>
@@ -46,7 +50,7 @@ export default defineComponent({
 		return {
 			count: 0,
 			messageStyle: {header: {style: {display: 'none'}}, content: {style: {padding: '0.5em'}}},
-			headerStyle: {header: {style: {fontSize: '1.5em'}}},
+			headerStyle: {header: {style: {fontSize: '1.5em', fontWeight: 600}}},
 			elementStyles: allStyles,
 			allContent: allContent,
 			defaultContent: defaultContent,
