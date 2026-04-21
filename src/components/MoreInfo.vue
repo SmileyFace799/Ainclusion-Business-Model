@@ -9,7 +9,14 @@
 			<img id="logo" src="/ainclusion.webp" alt="AINCLUSION logo" fetchpriority="high" loading="eager" @click="navigateBack">
 			<span style="margin: 0 0 5px 0; font-size: 1.8em; font-weight: 400;">Growth Model</span>
 		</div>
-		<Panel :class="style.color" style="text-align: start;" :pt="{header: {style: 'font-size: 3em;'}}" :header="content.title"><ContentComponent :bodies="content.bodies"></ContentComponent></Panel>
+		<Panel :class="style.color" style="text-align: start;" :pt="{header: {style: 'font-size: 3em;'}}" :header="content.title">
+			<template #header>
+				{{ content.title }}
+				<span style="flex-grow: 1;"></span>
+				<img v-if="content.icon !== undefined" :style="{height: '1.25em', filter: themeStore.darkTheme ? 'invert(100%)' : 'none'}" :src="content.icon.path" :alt="content.icon.alt">
+			</template>
+			<ContentComponent :bodies="content.bodies"></ContentComponent>
+		</Panel>
 	</div>
 	<Transition v-if="animationsStore.animations">
 		<div class="fade-overlay" v-if="showOverlay"></div>
@@ -23,6 +30,7 @@ import { defineComponent } from 'vue';
 import { allContent, defaultContent, type ContentType } from './infoContent';
 import { allStyles, defaultStyle, type StyleType } from './infoStyle';
 import { useAnimationsStore } from '../pinia/animationsStore';
+import { useThemeStore } from '../pinia/themeStore';
 
 export default defineComponent({
 	name: "MoreInfo",
@@ -47,7 +55,8 @@ export default defineComponent({
 		style(): StyleType {
 			return allStyles[this.slug] ?? defaultStyle;
 		},
-		animationsStore: () => useAnimationsStore()
+		animationsStore: () => useAnimationsStore(),
+		themeStore: () => useThemeStore()
 	},
 	methods: {
 		navigateBack() {

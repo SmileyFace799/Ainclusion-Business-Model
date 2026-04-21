@@ -17,6 +17,7 @@ export const defaultContent = {
 export const allContent = {
 	keyPartners: {
 		title: "Key Partners",
+		icon: {path: "icon-key-partners.png", alt: "Key Partners icon"},
 		shortBody: {tag: "span", content: [
 			{tag: "span", content: "Academic aid:"},
 			{tag: "ol", style: {display: "flex", flexDirection: "column", gap: "1em"}, content: [
@@ -87,6 +88,7 @@ export const allContent = {
 	},
 	keyActivities: {
 		title: "Key Activities",
+		icon: {path: "icon-key-activities.png", alt: "Key Activities icon"},
 		shortBody: {tag: "span", content: [
 			{tag: "p", content: "Engage students as volunteers"},
 			{tag: "p", content: "NTNU Seminars and workshops"},
@@ -106,6 +108,7 @@ export const allContent = {
 	},
 	keyResources: {
 		title: "Key Resources",
+		icon: {path: "icon-key-resources.png", alt: "Key Resources icon"},
 		shortBody: {tag: "span", content: [
 			{tag: "span", content: "Physical:"},
 			{tag: "ul", content: [{tag: "li", content: "Available seminar spaces (NTNU)"}]},
@@ -144,7 +147,7 @@ export const allContent = {
 	},
 	socialValueProposition: {
 		title: "Social Value Proposition",
-		icon: {path: "public/heart-light.svg", alt: "Heart icon"},
+		icon: {path: "icon-social-value-proposition.svg", alt: "Social Value Proposition icon"},
 		shortBody: {tag: "span", content: [
 			{tag: "p", content: "Making sure AI enhances, not replaces, human work"},
 			{tag: "p", content: "Making sure AI does not empower already existing barriers in society, and in the long run to combat them"},
@@ -164,6 +167,7 @@ export const allContent = {
 	},
 	relations: {
 		title: "Relations",
+		icon: {path: "icon-relations.png", alt: "Relations icon"},
 		shortBody: {tag: "span", content: [
 			{tag: "p", content: "Co-creation and peer collaboration"},
 			{tag: "p", content: "Trust and mediation"},
@@ -181,6 +185,7 @@ export const allContent = {
 	},
 	channels: {
 		title: "Channels",
+		icon: {path: "icon-channels.png", alt: "Channels icon"},
 		shortBody: {tag: "span", content: [
 			{tag: "span", content: "Digital:"},
 			{tag: "ul", content: [
@@ -222,6 +227,7 @@ export const allContent = {
 	},
 	stakeholders: {
 		title: "Stakeholders",
+		icon: {path: "icon-stakeholders.png", alt: "Stakeholders icon"},
 		shortBody: {tag: "span", content: [
 			{tag: "ol", style: {display: "flex", flexDirection: "column", gap: "1em"}, content: [
 				{tag: "li", content: [
@@ -268,6 +274,7 @@ export const allContent = {
 	},
 	costStructure: {
 		title: "Cost Structure",
+		icon: {path: "icon-cost-structure.png", alt: "Cost Structure icon"},
 		shortBody: {tag: "div", style: {display: "flex"}, content: [
 			{tag: "div", style: {flexGrow: "1"}, content: [
 				{tag: "span", content: "Fixed costs:"},
@@ -309,6 +316,7 @@ export const allContent = {
 	},
 	valueCapture: {
 		title: "Value Capture",
+		icon: {path: "icon-value-capture.png", alt: "Value Capture icon"},
 		shortBody: {tag: "div", style: {display: "flex"}, content: [
 			{tag: "div", style: {flexGrow: "1"}, content: [
 				{tag: "span", content: "Financial:"},

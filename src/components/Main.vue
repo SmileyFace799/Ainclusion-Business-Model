@@ -22,9 +22,9 @@
 			@click="() => redirect(slug)" :style="data.css"
 		>
 			<template #header>
-				<div style="display: flex;"></div>
-				<span style="justify-self: flex-start;">{{ allContent[slug]?.title ?? defaultContent.title }}</span>
-				<img v-if="allContent[slug]?.icon !== undefined" style="justify-self: flex-end; color: white;" :src="allContent[slug].icon.path" :alt="allContent[slug].icon.alt">
+				{{ allContent[slug]?.title ?? defaultContent.title }}
+				<span style="flex-grow: 1;"></span>
+				<img v-if="allContent[slug]?.icon !== undefined" :style="{height: '1.85em', filter: themeStore.darkTheme ? 'invert(100%)' : 'none'}" :src="allContent[slug].icon.path" :alt="allContent[slug].icon.alt">
 			</template>
 			<ContentComponent :bodies="[allContent[slug]?.shortBody ?? defaultContent.shortBody]"></ContentComponent>
 		</Panel>
@@ -40,6 +40,7 @@ import { allContent, defaultContent } from './infoContent';
 import ContentComponent from './ContentComponent.vue';
 import { allStyles } from './infoStyle';
 import { useAnimationsStore } from '../pinia/animationsStore';
+import { useThemeStore } from '../pinia/themeStore';
 
 export default defineComponent({
 	name: "Main",
@@ -58,7 +59,8 @@ export default defineComponent({
 		}
 	},
 	computed: {
-		animationsStore: () => useAnimationsStore()
+		animationsStore: () => useAnimationsStore(),
+		themeStore: () => useThemeStore()
 	},
 	methods: {
 		redirect(destination: string) {
@@ -92,6 +94,7 @@ export default defineComponent({
 	padding: 1em;
 	border-radius: 1em;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
 }
 .box:hover {
 	cursor: pointer;
