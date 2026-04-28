@@ -1,6 +1,8 @@
 # What is this?
 This is a growth model specifically made for [AINCLUSION](https://ainclusion.com). Last time this README was updated, this website was (and hopefully still is) hosted on https://ainclusion.smiley-face.no.
 
+**Update:** The hosting server's ethernet port died after a power outage, meaning it cannot connect to any internet. I am working on a fix for this, but for now, the website remains temporarily hosted at https://ainclusion.vercel.app.
+
 # Want to run this website locally?
 ## Installing prerequesites
 ### `npm` (version 20+), using `nvm`:
